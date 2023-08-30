@@ -1,0 +1,15 @@
+.headerContainer {
+  @include columnStartCenter;
+  @include BGAnimation;
+  height: 100vh;
+  width: 200px;
+  border-right: 4px solid rgb(212, 212, 212);
+  -webkit-box-shadow: 5px 1px 11px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 5px 1px 11px 5px rgba(0, 0, 0, 0.16);
+  &--logo {
+    margin: 50px auto;
+    & img {
+      width: 100px;
+    }
+  }
+}

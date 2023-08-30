@@ -21,16 +21,42 @@
 // // variable size
 // $fontSizeNav: 25px;
 
-// //Mixin
+//Mixin
 
-// //General setting
+@mixin BGAnimation() {
+  background: linear-gradient(300deg, #ff807993, #ffffff, #ffffff);
+  background-size: 100% 100%;
+  animation: gradient-animation 21s ease infinite;
+}
 
-// body {
-//   padding: 0;
-//   margin: 0;
-//   background: $backgroundColor1;
-//   width: 100%;
-// }
+@mixin columnStartCenter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+// Animation
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+//General setting
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 
 // a {
 //   text-decoration: none;
