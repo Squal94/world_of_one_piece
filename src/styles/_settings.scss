@@ -16,9 +16,9 @@ $withNavBtn: 150px;
 //Mixin
 
 @mixin BGAnimation() {
-  background: linear-gradient(300deg, #ff807993, #ffffff, #ffffff);
-  background-size: 100% 100%;
-  animation: gradient-animation 21s ease infinite;
+  background: linear-gradient(300deg, #79d5ff93, #ffffff, #ffffff);
+  background-size: 180% 180%;
+  animation: gradient-animation 15s ease infinite;
 }
 
 @mixin columnStartCenter {

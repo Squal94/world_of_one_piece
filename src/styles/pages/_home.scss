@@ -1,3 +1,16 @@
 .homeContainer {
-  height: 100vh;
+  position: relative;
+  &--bgHome {
+    position: absolute;
+    z-index: -25;
+    opacity: 0.2;
+    img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position: 10% 90%;
+      @include BGAnimation;
+      position: fixed;
+    }
+  }
 }
