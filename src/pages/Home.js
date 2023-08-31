@@ -9,10 +9,13 @@ import bgWano from "../assets/img/BgWano.png";
 const Home = () => {
   return (
     <div className="homeContainer">
+      <Header />
+      <div className="homeContainer__Content">
+        <h1>Test</h1>
+      </div>
       <div className="homeContainer--bgHome">
         <img src={bgWano} alt="Pays de Wano kuni" />
       </div>
-      <Header />
     </div>
   );
 };

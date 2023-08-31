@@ -1,5 +1,12 @@
 .homeContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: start;
   position: relative;
+  &__Content {
+    margin-left: 250px;
+  }
   &--bgHome {
     position: absolute;
     z-index: -25;
