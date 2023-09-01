@@ -35,7 +35,3 @@ export const innerContent = (contentSelected) => {
       return <HomeContent />;
   }
 };
-
-export const innerAnimate = () => {
-  console.log(test);
-};

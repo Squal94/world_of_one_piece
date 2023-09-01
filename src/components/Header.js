@@ -47,3 +47,5 @@ const Header = () => {
 };
 
 export default Header;
+
+// className={(nav) => (nav.isActive ? "nav-active" : "")}
