@@ -1,14 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import HomeContent from "../components/sliderPages/HomeContent";
-// import Story from "../components/sliderPages/Story";
-// import Equipage from "../components/sliderPages/Equipage";
 
 export const generalSlice = createSlice({
   name: "general",
   initialState: {
     scrollPosition: "",
     content: "",
-    innerContent: "",
   },
   reducers: {
     scrollPosition: (state, { payload }) => {
