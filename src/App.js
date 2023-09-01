@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
 import { useDispatch, useSelector } from "react-redux";
 import { scrollPosition } from "./features/general.slice";
+import Dashboard from "./pages/Dashboard";
+import Erreur from "./pages/Erreur";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/*" element={<Erreur />} />
       </Routes>
     </BrowserRouter>
   );
