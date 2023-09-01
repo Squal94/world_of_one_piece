@@ -2,7 +2,7 @@ import React from "react";
 
 const Events = () => {
   return (
-    <div>
+    <div className="eventsContainer">
       <h1>Events</h1>
     </div>
   );

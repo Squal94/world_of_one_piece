@@ -14,6 +14,7 @@ const Header = () => {
     "Events",
     "Contact",
   ];
+
   return (
     <div className="headerContainer">
       <div className="headerContainer--logo">

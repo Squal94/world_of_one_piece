@@ -2,7 +2,7 @@ import React from "react";
 
 const Equipage = () => {
   return (
-    <div>
+    <div className="equipageContainer">
       <h1>Equipage</h1>
     </div>
   );
