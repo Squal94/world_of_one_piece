@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
-  justify-content: start;
+  justify-content: flex-start;
   position: relative;
   &__Content {
     margin-left: 250px;
@@ -10,7 +10,7 @@
   &--bgHome {
     position: absolute;
     z-index: -25;
-    opacity: 0.2;
+    opacity: 0.3;
     img {
       width: 100vw;
       height: 100vh;

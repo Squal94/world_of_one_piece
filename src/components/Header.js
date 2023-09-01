@@ -1,7 +1,10 @@
 import React from "react";
 import BtnMenu from "./BtnMenu";
+import { useDispatch } from "react-redux";
+import { contentSelected } from "../features/general.slice";
 
 const Header = () => {
+  const dispatch = useDispatch();
   const menuTitles = [
     "Home",
     "Story",
@@ -23,7 +26,12 @@ const Header = () => {
         <ul>
           {menuTitles.map((title) => {
             return (
-              <li key={title}>
+              <li
+                key={title}
+                onClick={() => {
+                  dispatch(contentSelected(title));
+                }}
+              >
                 <BtnMenu value={title} />
               </li>
             );
