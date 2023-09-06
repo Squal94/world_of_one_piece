@@ -8,7 +8,7 @@ const Equipage = () => {
     <div className="equipageContainer">
       <div className="equipageContainer--content">
         {iconsTop.map((icon) => (
-          <EquipageCard id={icon} key={icon} />
+          <EquipageCard id={icon} key={icon} index={iconsTop.indexOf(icon)} />
         ))}
       </div>
       <div className="equipageContainer--content">

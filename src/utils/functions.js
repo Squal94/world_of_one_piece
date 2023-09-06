@@ -5,15 +5,6 @@ import Iles from "../components/sliderPages/Iles";
 import Fruits from "../components/sliderPages/Fruits";
 import Events from "../components/sliderPages/Events";
 import Contact from "../components/sliderPages/Contact";
-// import axios from "axios";
-
-// export const dataSelector = (dataChoice) => {
-//   const data = axios
-//     .get(`https://api.api-onepiece.com/${dataChoice}`)
-//     .then((res) => res.data);
-
-//   return data;
-// };
 
 export const innerContent = (contentSelected) => {
   switch (contentSelected) {
@@ -35,3 +26,26 @@ export const innerContent = (contentSelected) => {
       return <HomeContent />;
   }
 };
+
+// import axios from "axios";
+
+// export const dataSelector = (dataChoice) => {
+//   const data = axios
+//     .get(`https://api.api-onepiece.com/${dataChoice}`)
+//     .then((res) => res.data);
+
+//   return data;
+// };
+///////////////////////////////////////////////////////////////////////////////////////
+// export default function Card({ index }) {
+//     const [afterDelay, setAfterDelay] = useState(false);
+//     const DELAY_TIME = 250 // en millisecondes
+
+//     setTimeout(() => setAfterDelay(true), index * DELAY_TIME);
+
+//     return (
+//        <>
+//            {afterDelay && }
+//        </>
+//     );
+// }

@@ -1,19 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const EquipageCard = ({ id }) => {
-  console.log(id);
+const EquipageCard = ({ id, index }) => {
+  const [afterDelay, setAfterDelay] = useState(false);
+  const DELAY_TIME = 50;
+
+  setTimeout(() => setAfterDelay(true), index * DELAY_TIME);
+
   return (
-    <NavLink className="equipageCard" id={id}>
-      <div className="equipageCardContainer">
-        <h1 className="equipageCardContainer--title">{id}</h1>
-        <img
-          className="equipageCardContainer--img"
-          src={`/assets/iconEquipage/${id.toLowerCase()}Pc.png`}
-          alt="Roronoa Zoro"
-        />
-      </div>
-    </NavLink>
+    afterDelay && (
+      <NavLink className="equipageCard" id={id}>
+        <div className="equipageCardContainer">
+          <h1 className="equipageCardContainer--title">{id}</h1>
+          <img
+            className="equipageCardContainer--img"
+            src={`/assets/iconEquipage/${id.toLowerCase()}Pc.png`}
+            alt={id}
+          />
+        </div>
+      </NavLink>
+    )
   );
 };
 
