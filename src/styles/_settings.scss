@@ -3,6 +3,10 @@
   font-family: "Sady";
   src: url(../assets/fonts/BAR_SADY-Regular.otf);
 }
+@font-face {
+  font-family: "AlexBrush";
+  src: url(../assets/fonts/AlexBrush-Regular.ttf);
+}
 
 // variable color
 $writingColorcolorNav: rgb(46, 46, 46);
@@ -68,6 +72,39 @@ $withNavBtn: 150px;
   }
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes begin-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes begin-animation {
+  0% {
+    background-color: black;
+  }
+  35% {
+    background-color: black;
+  }
+  65% {
+    background-color: black;
+  }
+  85% {
+    background-color: black;
+  }
+  90% {
+    background-color: black;
+  }
+  95% {
+    background-color: black;
+  }
+  100% {
+    background-color: black;
   }
 }
 

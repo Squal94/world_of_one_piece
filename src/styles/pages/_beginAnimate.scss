@@ -1,0 +1,13 @@
+.beginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  &__img {
+    margin: 50px;
+    max-height: 90vh;
+    animation: begin-animation 4s ease-in-out;
+  }
+}

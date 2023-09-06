@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { scrollPosition } from "./features/general.slice";
 import Dashboard from "./pages/Dashboard";
 import Erreur from "./pages/Erreur";
+// import BeginAnimate from "./pages/BeginAnimate";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        {/* <Route path="/" element={<Dashboard />} /> */}
         <Route path="/" element={<Dashboard />} />
         <Route path="/*" element={<Erreur />} />
       </Routes>

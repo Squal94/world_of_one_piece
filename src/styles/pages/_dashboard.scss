@@ -5,7 +5,9 @@
   justify-content: flex-start;
   position: relative;
   &__Content {
-    margin-left: 250px;
+    width: 100%;
+
+    margin-left: 200px;
   }
   &--bgHome {
     position: absolute;
