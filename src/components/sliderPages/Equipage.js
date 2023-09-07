@@ -2,8 +2,9 @@ import React from "react";
 import EquipageCard from "../EquipageCard";
 
 const Equipage = () => {
-  const iconsTop = ["Nami", "Chopper", "Luffy", "Francky", "Ussop"];
-  const iconsBottom = ["Robin", "Sanji", "Zorro", "Jimbey", "Brook"];
+  const iconsTop = ["Nami", "Chopper", "Luffy", "Franky", "Usopp"];
+  const iconsBottom = ["Robin", "Sanji", "Zoro", "Jinbe", "Brook"];
+
   return (
     <div className="equipageContainer">
       <div className="equipageContainer--top">
