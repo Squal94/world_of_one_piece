@@ -2,15 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const EquipageCard = ({ id, index }) => {
-  // const [afterDelay, setAfterDelay] = useState(false);
-  const duration = 1000; // ms
-  const delay = 800; // ms
+  const duration = 700;
+  const delay = 500;
 
   const animStr = (i) =>
     `begin-animation ${duration}ms ease-out ${delay * (i + 1)}ms forwards`;
-  // const DELAY_TIME = 100;
-
-  // setTimeout(() => setAfterDelay(true), index * DELAY_TIME);
 
   return (
     <NavLink

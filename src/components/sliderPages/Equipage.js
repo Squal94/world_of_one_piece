@@ -3,15 +3,15 @@ import EquipageCard from "../EquipageCard";
 
 const Equipage = () => {
   const iconsTop = ["Nami", "Chopper", "Luffy", "Francky", "Ussop"];
-  const iconsBottom = ["Brook", "Jimbey", "Zorro", "Sanji", "Robin"];
+  const iconsBottom = ["Robin", "Sanji", "Zorro", "Jimbey", "Brook"];
   return (
     <div className="equipageContainer">
-      <div className="equipageContainer--content">
+      <div className="equipageContainer--top">
         {iconsTop.map((icon) => (
           <EquipageCard id={icon} key={icon} index={iconsTop.indexOf(icon)} />
         ))}
       </div>
-      <div className="equipageContainer--content">
+      <div className="equipageContainer--bottom">
         {iconsBottom.map((icon, i) => (
           <EquipageCard id={icon} key={icon} index={i} />
         ))}
