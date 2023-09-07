@@ -12,8 +12,8 @@ const Equipage = () => {
         ))}
       </div>
       <div className="equipageContainer--content">
-        {iconsBottom.map((icon) => (
-          <EquipageCard id={icon} key={icon} />
+        {iconsBottom.map((icon, i) => (
+          <EquipageCard id={icon} key={icon} index={i} />
         ))}
       </div>
     </div>
