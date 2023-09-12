@@ -6,6 +6,7 @@ export const dataSlice = createSlice({
     dataImport: [],
     modalData: {},
     enableModal: false,
+    idSelectedvalue: "",
   },
   reducers: {
     dataSelected: (state, { payload }) => {
@@ -17,8 +18,12 @@ export const dataSlice = createSlice({
     activeModal: (state, { payload }) => {
       state.enableModal = payload;
     },
+    idSelected: (state, { payload }) => {
+      state.idSelectedvalue = payload;
+    },
   },
 });
 
 export default dataSlice.reducer;
-export const { dataSelected, persoData, activeModal } = dataSlice.actions;
+export const { dataSelected, persoData, activeModal, idSelected } =
+  dataSlice.actions;

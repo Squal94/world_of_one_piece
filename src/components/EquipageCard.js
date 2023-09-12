@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { activeModal, persoData } from "../features/data.slice";
+import { activeModal, idSelected, persoData } from "../features/data.slice";
 
 const EquipageCard = ({ id, index }) => {
   const duration = 500;
@@ -16,6 +16,7 @@ const EquipageCard = ({ id, index }) => {
     axios.get(`https://api.api-onepiece.com/characters/crew/1`).then((res) => {
       dispatch(persoData(res.data.find((e) => e.french_name.includes(name))));
       dispatch(activeModal(true));
+      dispatch(idSelected(name));
     });
   };
 

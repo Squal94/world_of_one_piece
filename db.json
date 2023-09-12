@@ -1,0 +1,54 @@
+{
+  "image": [
+    {
+      "name": "luffy",
+      "bounty": "./public/assets/bounty/bountyLuffy.jpg",
+      "bg": "./public/assets/bgModal/bg_luffy.jpg"
+    },
+    {
+      "name": "zoro",
+      "bounty": "./public/assets/bounty/bountyZoro.jpg",
+      "bg": "./public/assets/bgModal/bg_zoro.jpg"
+    },
+    {
+      "name": "nami",
+      "bounty": "./public/assets/bounty/bountyNami.jpg",
+      "bg": "./public/assets/bgModal/bg_nami.jpg.jpg"
+    },
+    {
+      "name": "usopp",
+      "bounty": "./public/assets/bounty/bountyUsopp.jpg",
+      "bg": "./public/assets/bgModal/bg_usopp.jpg"
+    },
+    {
+      "name": "sanji",
+      "bounty": "./public/assets/bounty/bountySanji.jpg",
+      "bg": "./public/assets/bgModal/bg_sanji.jpg"
+    },
+    {
+      "name": "chopper",
+      "bounty": "./public/assets/bounty/bountyChopper.jpg",
+      "bg": "./public/assets/bgModal/bg_chopper.jpg"
+    },
+    {
+      "name": "robin",
+      "bounty": "./public/assets/bounty/bountyRobin.jpg",
+      "bg": "./public/assets/bgModal/bg_robin.png"
+    },
+    {
+      "name": "franky",
+      "bounty": "./public/assets/bounty/bountyFranky.jpg",
+      "bg": "./public/assets/bgModal/bg_franky.jpg"
+    },
+    {
+      "name": "brook",
+      "bounty": "./public/assets/bounty/bountyBrook.jpg",
+      "bg": "./public/assets/bgModal/bg_brook.jpg"
+    },
+    {
+      "name": "jinbe",
+      "bounty": "./public/assets/bounty/bountyJimbe.jpg",
+      "bg": "./public/assets/bgModal/bg_jinbe.jpg"
+    }
+  ]
+}
