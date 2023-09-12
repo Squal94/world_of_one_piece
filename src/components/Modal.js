@@ -19,11 +19,16 @@ const Modal = ({ data }) => {
       <div className="modal__content">
         <div className="modal__content--bounty">
           <img src={`/assets/bounty/bounty${bgSelected}.jpg`} alt="bounty" />
-          <p>test</p>
+          <p>{data.bounty} berrys</p>
         </div>
         <div className="modal__content--info">
           <h1>{data.french_name}</h1>
-          <p>
+          <p>Age: {data.age}</p>
+          <p>Taille: {data.size}</p>
+          <p>Position: {data.job}</p>
+          <p>Status: {data.status}</p>
+
+          <p className="modal__content--info--text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere unde
             illum incidunt deleniti, dignissimos veniam iure ratione dolores
             eligendi eveniet atque error. Quaerat commodi velit consequatur
