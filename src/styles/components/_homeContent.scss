@@ -1,3 +1,14 @@
 .homeContainer {
-  animation: open-animation 1.2s ease-in-out;
+  &__title {
+    animation: open-animation 1.2s ease-in-out;
+    font-family: "Sady", Georgia, "Times New Roman", Times, serif;
+    font-size: 3rem;
+    margin: 20px 20px;
+    width: 300px;
+    height: 200px;
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
 }
