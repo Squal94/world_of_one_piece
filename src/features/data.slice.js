@@ -5,6 +5,7 @@ export const dataSlice = createSlice({
   initialState: {
     dataImport: [],
     modalData: {},
+    fruitsData: [],
     enableModal: false,
     idSelectedvalue: "",
   },
@@ -14,6 +15,9 @@ export const dataSlice = createSlice({
     },
     persoData: (state, { payload }) => {
       state.modalData = payload;
+    },
+    fruitsImport: (state, action) => {
+      state.fruitsData = action.payload;
     },
     activeModal: (state, { payload }) => {
       state.enableModal = payload;
@@ -25,5 +29,10 @@ export const dataSlice = createSlice({
 });
 
 export default dataSlice.reducer;
-export const { dataSelected, persoData, activeModal, idSelected } =
-  dataSlice.actions;
+export const {
+  dataSelected,
+  persoData,
+  fruitsImport,
+  activeModal,
+  idSelected,
+} = dataSlice.actions;
