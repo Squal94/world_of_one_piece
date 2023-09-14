@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fruitsImport } from "../../features/data.slice";
+import FruitAffichage from "../FruitAffichage";
 
 const Fruits = () => {
   const [fruitSelected, setFruitSelected] = useState("");
@@ -46,7 +47,7 @@ const Fruits = () => {
           </select>
         </div>
         <div className="fruitsContainer--affichage">
-          <p>{fruitSelected && fruitSelected}</p>
+          <FruitAffichage value={fruitSelected} />
         </div>
       </div>
     </div>
