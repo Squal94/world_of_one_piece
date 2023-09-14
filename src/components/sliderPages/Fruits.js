@@ -1,9 +1,10 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fruitsImport } from "../../features/data.slice";
 
 const Fruits = () => {
+  const [fruitSelected, setFruitSelected] = useState("");
   const dispatch = useDispatch();
   const fruits = useSelector((state) => state.data.fruitsData);
 
@@ -12,8 +13,6 @@ const Fruits = () => {
       .get("https://api.api-onepiece.com/fruits")
       .then((res) => dispatch(fruitsImport(res.data)));
   }, [dispatch]);
-
-  console.log(fruits);
 
   return (
     <div className="fruitsContainer">
@@ -31,7 +30,11 @@ const Fruits = () => {
         <div className="fruitsContainer--select">
           <label htmlFor="fruits">Choisis ton fruit:</label>
 
-          <select name="fruit" id="fruits">
+          <select
+            name="fruit"
+            id="fruits"
+            onChange={(e) => setFruitSelected(e.target.value)}
+          >
             <option value="">--Please choose an option--</option>
             {fruits.map((fruit) => {
               return (
@@ -42,7 +45,9 @@ const Fruits = () => {
             })}
           </select>
         </div>
-        <div className="fruitsContainer--affichage"></div>
+        <div className="fruitsContainer--affichage">
+          <p>{fruitSelected && fruitSelected}</p>
+        </div>
       </div>
     </div>
   );

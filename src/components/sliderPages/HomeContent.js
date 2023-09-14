@@ -9,7 +9,7 @@ const HomeContent = () => {
       </h1>
       <div className="homeContainer__news">
         <article>
-          <h2>News</h2>
+          <h2>News :</h2>
           <iframe
             width="360"
             height="210"
