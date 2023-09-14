@@ -5,6 +5,7 @@ export const generalSlice = createSlice({
   initialState: {
     scrollPosition: "",
     content: "",
+    imgSize: "",
   },
   reducers: {
     scrollPosition: (state, { payload }) => {
@@ -19,11 +20,15 @@ export const generalSlice = createSlice({
     contentSelected: (state, { payload }) => {
       state.content = payload.toLowerCase();
     },
+    imgSize: (state, { payload }) => {
+      state.imgSize = payload;
+    },
   },
 });
 
 export default generalSlice.reducer;
-export const { scrollPosition, contentSelected } = generalSlice.actions;
+export const { scrollPosition, contentSelected, imgSize } =
+  generalSlice.actions;
 
 // contentSelected: (state, { payload }) => {
 //   switch (payload) {
