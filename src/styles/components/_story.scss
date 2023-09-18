@@ -5,9 +5,38 @@
   justify-content: center;
   margin: 0 auto;
   padding: 50px;
+  font-family: "Sady", Arial, Helvetica, sans-serif;
 
   &--title {
     animation: open-animation 1.2s ease-in-out;
     max-width: 350px;
+  }
+  &__content {
+    &--article {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(245, 245, 245, 0.677);
+      border-radius: 15px;
+      margin: 50px auto;
+      img {
+        max-width: 350px;
+        margin: 50px;
+      }
+      &--text {
+        margin: 50px;
+      }
+    }
+  }
+  &__best {
+    &--youtube {
+      height: 250px;
+      width: 100%;
+      display: inline-flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
