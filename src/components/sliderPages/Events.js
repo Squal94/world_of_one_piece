@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Events = () => {
   return (
     <div className="eventsContainer">
-      <div className="mainEvent">
+      <div className="eventsContainer__main">
         <h2>Upcoming</h2>
         <h4>OUR EVENT</h4>
         <div className="event-grid">
