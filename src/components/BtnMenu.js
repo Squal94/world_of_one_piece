@@ -2,8 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const BtnMenu = ({ value }) => {
+  const scrollZero = () => {
+    window.scrollTo({ top: 0 });
+  };
+
   return (
-    <NavLink className="btnMenu" onClick={window.scrollTo({ top: 0 })}>
+    <NavLink className="btnMenu" onClick={() => scrollZero()}>
       {value}
     </NavLink>
   );
