@@ -9,7 +9,6 @@ const Header = () => {
     "Home",
     "Story",
     "Equipage",
-    "Iles",
     "Fruits",
     "Events",
     "Contact",

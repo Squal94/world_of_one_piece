@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-// import { imgSize } from "../features/general.slice";
+import { useSelector } from "react-redux";
 
 const FruitAffichage = ({ value }) => {
   const [fruitSelected, setFruitSelected] = useState("");
-  // const testImg = document.querySelector(".fruitSelected__container--img");
-  // const dispatch = useDispatch();
   const fruits = useSelector((state) => state.data.fruitsData);
-  // const sizePic = useSelector((state) => state.general.imgSize);
 
   useEffect(() => {
     value &&
@@ -21,28 +17,33 @@ const FruitAffichage = ({ value }) => {
   return (
     <div className="fruitSelected">
       <h1>{fruitSelected.roman_name}</h1>
-      <div className="fruitSelected__container">
-        <div className="fruitSelected__container--info">
-          <p>Nom en francais : {fruitSelected.french_name} </p>
-          <p>Type : {fruitSelected.type}</p>
-        </div>
 
-        <img
-          className="fruitSelected__container--img"
-          src={`/assets/fruits/${value}.png`}
-          alt={value}
-        />
+      <div className="fruitSelected--info">
+        <p>Nom en francais : {fruitSelected.french_name} </p>
+        <p>Type : {fruitSelected.type}</p>
+      </div>
 
-        <div className="fruitSelected__container--definition">
-          <h2>Description : </h2>
-          <p>{fruitSelected.description}</p>
-        </div>
+      <img
+        className="fruitSelected--img"
+        src={`/assets/fruits/${value}.png`}
+        alt={value}
+      />
+
+      <div className="fruitSelected--definition">
+        <h2>Description : </h2>
+        <p>{fruitSelected.description}</p>
       </div>
     </div>
   );
 };
 
 export default FruitAffichage;
+
+// const [fruitSelected, setFruitSelected] = useState("");
+// const testImg = document.querySelector(".fruitSelected__container--img");
+// const dispatch = useDispatch();
+// const fruits = useSelector((state) => state.data.fruitsData);
+// const sizePic = useSelector((state) => state.general.imgSize);
 
 // `/assets/fruits/${value}.png `
 // ? `/assets/fruits/${value}.png`

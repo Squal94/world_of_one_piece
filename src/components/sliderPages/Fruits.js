@@ -28,16 +28,15 @@ const Fruits = () => {
           uniquement dans l'anime, créant ainsi une authenticité propre à
           chacun.
         </p>
+        <h2>Sélectionne ton fruit</h2>
         <div className="fruitsContainer--select">
-          <label htmlFor="fruits">Choisis ton fruit:</label>
-
           <select
             name="fruit"
             id="fruits"
             onChange={(e) => setFruitSelected(e.target.value)}
           >
             <option value="">--Please choose an option--</option>
-            {fruits.map((fruit) => {
+            {fruits.slice(0, 10).map((fruit) => {
               return (
                 <option key={`${fruit.id}`} value={`${fruit.roman_name}`}>
                   {fruit.roman_name}
