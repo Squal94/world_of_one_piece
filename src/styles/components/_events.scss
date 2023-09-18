@@ -1,3 +1,192 @@
 .eventsContainer {
-  animation: open-animation 1.2s ease-in-out;
+  max-width: 1000px;
+  padding: 10px 100px 10px 10px;
+  margin: 0px auto;
+  .mainEvent {
+    position: relative;
+
+    img {
+      width: 100%;
+      position: absolute;
+      opacity: 0.2;
+      z-index: -5;
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+  }
+  h4 {
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    margin-top: -12px;
+  }
+  img {
+    margin: 30px 0;
+  }
+  .event-grid {
+    display: grid;
+    grid-template-columns: 58% 42%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a b"
+      "c b"
+      "d d";
+    gap: 90px;
+
+    .date-content {
+      margin: 20px auto;
+      color: white;
+      background-color: rgba(245, 245, 245, 0.864);
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+
+      h6 {
+        margin: 20px;
+        font-size: 2rem;
+        color: black;
+      }
+
+      span {
+        color: black;
+        font-size: 1.5rem;
+      }
+    }
+
+    .address {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background: white;
+
+      h3 {
+        letter-spacing: 1px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        padding-left: 8px;
+      }
+      p {
+        font-size: 0.9rem;
+        color: grey;
+        margin-top: 20px;
+        letter-spacing: 1px;
+
+        i {
+          margin-right: 3px;
+          font-size: 0.7rem;
+          transform: translateY(-2px);
+
+          &:nth-child(2) {
+            margin-left: 10px;
+          }
+        }
+      }
+      h5 {
+        letter-spacing: 2px;
+        margin-top: 25px;
+      }
+    }
+
+    .event-left {
+      display: grid;
+      grid-template-columns: 39% 61%;
+      text-align: left;
+
+      .address {
+        color: black;
+        padding: 30px 20px;
+      }
+    }
+
+    .event-1 {
+      grid-area: a;
+
+      .date {
+        background: url(./../../assets/img/events/230515_japanevasion.jpg)
+          center/cover;
+      }
+    }
+    .event-2 {
+      grid-area: c;
+
+      .date {
+        background: url(./../../assets/img/events/je___2024_v1.jpg) center/cover;
+      }
+    }
+    .event-3 {
+      grid-area: b;
+      background: url(./../../assets/img/events/Nuit-OP105.png) center/cover;
+      padding: 25px;
+
+      .address {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(245, 245, 245, 0.905);
+        height: 100%;
+        padding: 0 12px;
+        h6 {
+          color: black;
+        }
+        span {
+          color: grey;
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          margin: 40px;
+          text-align: center;
+        }
+        h5 {
+          padding: 45px;
+        }
+      }
+    }
+    .event-4 {
+      grid-area: d;
+      background: url(./../../assets/img/events/one-piece-equipage-netflix-chapeau-de-paille-saison-2-scaled.jpg)
+        center/cover;
+      padding: 25px;
+
+      .address {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(245, 245, 245, 0.871);
+        height: 100%;
+        padding: 0 12px;
+        .title {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
+          justify-content: center;
+          h4 {
+            font-size: 3.5rem;
+            margin: auto;
+            font-family: "Sady", Arial, Helvetica, sans-serif;
+            color: black;
+          }
+          img {
+            opacity: 1;
+            position: static;
+            width: 200px;
+            z-index: 50;
+          }
+        }
+        h5 {
+          font-size: 2.5rem;
+          padding: 45px;
+        }
+      }
+    }
+  }
 }
