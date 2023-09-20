@@ -1,3 +1,74 @@
-.contactContainer {
-  animation: open-animation 1.2s ease-in-out;
+.contact {
+  animation: begin-animation 0.3s ease-in-out;
+  display: flex;
+  font-family: "Sady", Arial, Helvetica, sans-serif;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  max-width: 90%;
+  height: 100vh;
+
+  &__form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    &--right {
+      max-width: 300px;
+      margin: 50px;
+    }
+    &--left {
+      max-width: 450px;
+    }
+    &--center {
+      background-color: rgba(255, 255, 255, 0.686);
+      border-radius: 20px;
+      padding: 30px;
+      position: relative;
+      &--img1 {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        opacity: 0.5;
+        z-index: -5;
+      }
+      &--img2 {
+        position: absolute;
+        right: 20px;
+        top: 200px;
+        opacity: 0.5;
+        z-index: -5;
+      }
+      &--img3 {
+        position: absolute;
+        left: 20px;
+        bottom: 10px;
+        opacity: 0.5;
+        z-index: -5;
+      }
+    }
+    padding: 20px;
+    &--submit {
+      display: flex;
+      justify-content: center;
+      button {
+        padding: 15px 20px;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 1em auto;
+      }
+    }
+  }
+  .labelForm {
+    display: flex;
+    flex-flow: column nowrap;
+    label,
+    input,
+    textarea {
+      margin: 5px;
+    }
+  }
 }
