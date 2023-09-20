@@ -13,6 +13,7 @@
   }
   &__content {
     &--article {
+      animation: begin-animation 0.3s ease-in-out;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
