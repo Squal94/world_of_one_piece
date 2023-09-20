@@ -30,13 +30,15 @@
     }
   }
   &__best {
+    // overflow: hidden;
+    max-width: 1000px;
+
     &--youtube {
-      height: 250px;
-      width: 100%;
-      display: inline-flex;
+      overflow-x: auto;
+      display: flex;
       flex-flow: row nowrap;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
     }
   }
 }

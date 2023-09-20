@@ -21,7 +21,11 @@ const HomeContent = () => {
         </article>
         <article>
           <h2>Disponible sur :</h2>
-          <NavLink to={"https://www.crunchyroll.com/fr"}>
+          <NavLink
+            to={"https://www.crunchyroll.com/fr"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="/assets/crunchyroll.png" alt="crunchyroll logo" />
           </NavLink>
         </article>

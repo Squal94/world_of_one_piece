@@ -19,7 +19,13 @@ const Events = () => {
               <h3>Japan Evasion</h3>
               <p>10:00pm - 18:00am</p>
               <h5>
-                <NavLink to={"https://www.japanevasion.fr/"}>TICKETS</NavLink>{" "}
+                <NavLink
+                  to={"https://www.japanevasion.fr/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TICKETS
+                </NavLink>{" "}
               </h5>
             </div>
           </div>
@@ -36,7 +42,11 @@ const Events = () => {
                 <i className="far fa-clock"></i>10:00pm - 20:00am
               </p>
               <h5>
-                <NavLink to={"https://www.japan-expo-paris.com/fr/"}>
+                <NavLink
+                  to={"https://www.japan-expo-paris.com/fr/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   BUY TICKETS
                 </NavLink>
               </h5>
@@ -59,6 +69,8 @@ const Events = () => {
                   to={
                     "https://www.nuitonepiece.com/rendez-vous-le-29-septembre-prochain-pour-la-nuit-one-piece-2023/"
                   }
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   BUY TICKETS
                 </NavLink>
@@ -76,7 +88,11 @@ const Events = () => {
               {/* <h3>Saison 1 terminée saison 2 en production</h3>
                   <p>Serie adaptée de l'anime one piece Eiichirō Oda</p> */}
               <h5>
-                <NavLink to={"https://www.netflix.com/fr/title/80217863"}>
+                <NavLink
+                  to={"https://www.netflix.com/fr/title/80217863"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visionner
                 </NavLink>
               </h5>

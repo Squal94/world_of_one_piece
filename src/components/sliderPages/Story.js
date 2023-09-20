@@ -77,36 +77,40 @@ const Story = () => {
         <h2>Best moments of Arc of Wano</h2>
         <div className="storyContainer__best--youtube">
           <YoutubeEmbed
-            embedId={"mjSCqjrf0gE?si=Obs_GgseWR6bq11P"}
-            size="250"
+            link={"mjSCqjrf0gE"}
+            pic="/assets/youtubeCapture/Capture d'écran 1.png"
           />
           <YoutubeEmbed
-            embedId={"SxaUgsSZva8?si=yBA5c4OCfLsMwaa_"}
-            size="250"
+            link={"XuWuin5UEBk"}
+            pic="/assets/youtubeCapture/Capture d'écran 2.png"
           />
           <YoutubeEmbed
-            embedId={"XuWuin5UEBk?si=jYIUZg39gw8N8M-3"}
-            size="250"
+            link={"XM79rJcYye4"}
+            pic="/assets/youtubeCapture/Capture d'écran 3.png"
           />
           <YoutubeEmbed
-            embedId={"G2zkKqPo1lw?si=HV2Pztwjlp-R9p88"}
-            size="250"
+            link={"G2zkKqPo1lw"}
+            pic="/assets/youtubeCapture/Capture d'écran 4.png"
           />
           <YoutubeEmbed
-            embedId={"cjjYAbMtWhk?si=jwtVau1pkCX3yrtQ"}
-            size="250"
+            link={"23eDwEgSu-k"}
+            pic="/assets/youtubeCapture/Capture d'écran 5.png"
           />
           <YoutubeEmbed
-            embedId={"23eDwEgSu-k?si=A_eJXufBYajwIO5L"}
-            size="250"
+            link={"M3Wy9umXDcE"}
+            pic="/assets/youtubeCapture/Capture d'écran 6.png"
           />
           <YoutubeEmbed
-            embedId={"AfZmNBonIeI?si=V0PiwIpB-59fb_wC"}
-            size="250"
+            link={"6qt1tyasOmM"}
+            pic="/assets/youtubeCapture/Capture d'écran 7.png"
           />
           <YoutubeEmbed
-            embedId={"M3Wy9umXDcE?si=HDt8TqPSX3xeze5G"}
-            size="250"
+            link={"zvHZukrBDE4"}
+            pic="/assets/youtubeCapture/Capture d'écran 8.png"
+          />
+          <YoutubeEmbed
+            link={"xt1LkHeIu08"}
+            pic="/assets/youtubeCapture/Capture d'écran 9.png"
           />
         </div>
       </div>
