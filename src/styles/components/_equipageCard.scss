@@ -6,6 +6,11 @@
     transition: transform 0.3s ease-in-out;
     border: 2px solid #ffcc00ff;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    min-width: 100px;
 
     &--title {
       bottom: 0;
@@ -18,8 +23,8 @@
       width: 100%;
     }
     &--img {
-      max-width: 130px;
-      margin: 10px;
+      width: 95%;
+      margin: 10px auto;
       border-radius: 10px;
       -webkit-box-shadow: -4px 14px 29px 7px rgba(255, 184, 88, 0.26);
       box-shadow: -4px 14px 29px 7px rgba(255, 184, 88, 0.26);

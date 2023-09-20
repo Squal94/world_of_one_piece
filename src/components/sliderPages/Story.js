@@ -75,6 +75,7 @@ const Story = () => {
       </div>
       <div className="storyContainer__best">
         <h2>Best moments of Arc of Wano</h2>
+        <hr style={{ width: "400px" }} />
         <div className="storyContainer__best--youtube">
           <YoutubeEmbed
             link={"mjSCqjrf0gE"}
@@ -111,6 +112,10 @@ const Story = () => {
           <YoutubeEmbed
             link={"xt1LkHeIu08"}
             pic="/assets/youtubeCapture/Capture d'écran 9.png"
+          />
+          <YoutubeEmbed
+            link={"EQCR7UuO7lo"}
+            pic="/assets/youtubeCapture/Capture d'écran 10.png"
           />
         </div>
       </div>

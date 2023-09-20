@@ -30,15 +30,39 @@
     }
   }
   &__best {
-    // overflow: hidden;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.677);
     max-width: 1000px;
+    overflow: hidden;
+    padding: 0 20px;
+    position: relative;
+    hr {
+      font-weight: 700;
+      position: absolute;
+      left: 20px;
+    }
 
     &--youtube {
-      overflow-x: auto;
       display: flex;
       flex-flow: row nowrap;
       align-items: center;
       justify-content: flex-start;
+      margin: 50px auto 0 auto;
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 0px;
+        height: 8px;
+      }
+    }
+    &--youtube:hover {
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
