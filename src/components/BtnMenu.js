@@ -1,22 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { navToogle } from "../features/general.slice";
 
 const BtnMenu = ({ value }) => {
+  const dispatch = useDispatch();
   const navBar = document.querySelector(".headerContainer");
-  // const [closeNav, setCloseNav] = useState(false);
+  const toogleBar = useSelector((state) => state.general.toolbar);
 
   const scrollZero = () => {
     window.scrollTo({ top: 0 });
-    // setCloseNav(true);
+    navBar.classList.remove("responsiveBar");
+    dispatch(navToogle(!toogleBar));
   };
-
-  // useEffect(() => {
-  //   if (closeNav === true) {
-  //     navBar.classList.remove("responsiveBar");
-  //     setCloseNav(false);
-  //   }
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [closeNav]);
 
   return (
     <NavLink className="btnMenu" onClick={() => scrollZero()}>
