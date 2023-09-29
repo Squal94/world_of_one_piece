@@ -25,11 +25,13 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: flex-start;
-    @media screen and (max-width: 580px) {
+    @media screen and (max-width: 1080px) {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
+    }
+    @media screen and (max-width: 580px) {
       iframe {
         width: 300px;
       }
