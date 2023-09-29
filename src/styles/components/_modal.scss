@@ -6,6 +6,9 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  @media screen and (max-width: 1200px) {
+    align-items: start;
+  }
   &__container {
     background-color: white;
     border: 2px solid grey;
@@ -15,6 +18,12 @@
     height: 80%;
     width: 60%;
     z-index: 50;
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      height: 100vh;
+      justify-content: start;
+      align-items: center;
+    }
     &__content {
       display: flex;
       flex-flow: row nowrap;
@@ -29,8 +38,20 @@
         justify-content: center;
         margin: 50px auto;
         width: 40%;
+        @media screen and (max-width: 1200px) {
+          width: auto;
+          margin: 10px auto;
+        }
         img {
           max-width: 200px;
+          @media screen and (max-width: 580px) {
+            margin-top: 30px;
+            max-width: 100px;
+          }
+          @media screen and (max-width: 1200px) {
+            margin-top: 30px;
+            max-width: 130px;
+          }
         }
         p {
           font-size: 1.5rem;
@@ -44,6 +65,12 @@
         align-items: flex-start;
         height: 100%;
         width: 60%;
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+          height: auto;
+          justify-content: start;
+          align-items: center;
+        }
         h1 {
           text-align: center;
           width: 100%;
@@ -52,10 +79,21 @@
           margin: 50px auto;
           text-align: center;
           width: 100px;
+          @media screen and (max-width: 1200px) {
+            margin: 10px auto;
+            text-align: center;
+          }
         }
         &--text {
           margin-right: 50px;
+          @media screen and (max-width: 1200px) {
+            margin: 10px auto;
+            text-align: center;
+          }
         }
+      }
+      @media screen and (max-width: 1200px) {
+        flex-flow: column nowrap;
       }
     }
     &--bg {
@@ -65,6 +103,9 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
     }
   }
 }
