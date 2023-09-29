@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     max-width: 200px;
-    min-width: 100px;
+    margin: 10px;
 
     &--title {
       bottom: 0;
@@ -23,11 +23,14 @@
       width: 100%;
     }
     &--img {
-      width: 95%;
+      width: 90%;
       margin: 10px auto;
       border-radius: 10px;
       -webkit-box-shadow: -4px 14px 29px 7px rgba(255, 184, 88, 0.26);
       box-shadow: -4px 14px 29px 7px rgba(255, 184, 88, 0.26);
+      // @media screen and (max-width: 1100px) {
+      //   width: 60%;
+      // }
     }
   }
   &Container:hover {
