@@ -3,7 +3,8 @@
   border-radius: 50px;
   border: 2px solid rgb(255, 255, 255);
   padding: 10px 50px;
-  margin: 50px;
+  margin: 50px auto;
+  max-width: 700px;
 
   &--info {
     p {
@@ -12,12 +13,14 @@
   }
   &--img {
     max-width: 500px;
+    width: 100%;
   }
   &--definition {
     background-color: white;
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
+
     h2 {
       font-size: 1.5rem;
     }
