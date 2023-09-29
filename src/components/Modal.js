@@ -6,7 +6,6 @@ const Modal = ({ data }) => {
   const bgSelected = useSelector((state) => state.data.idSelectedvalue);
 
   const dispatch = useDispatch();
-  console.log(data);
 
   return (
     <div

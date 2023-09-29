@@ -7,6 +7,24 @@
   border-right: 4px solid rgb(212, 212, 212);
   -webkit-box-shadow: 5px 1px 11px 5px rgba(0, 0, 0, 0.16);
   box-shadow: 5px 1px 11px 5px rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s ease-in-out;
+  &__responsive {
+    color: rgb(43, 43, 43);
+    position: absolute;
+    cursor: pointer;
+    top: -5px;
+    right: -60px;
+    background-color: rgb(212, 212, 212);
+    font-family: "Sady", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    z-index: 99;
+    border: 2px solid rgb(248, 248, 248);
+    border-left: none;
+    display: none;
+    @media screen and (max-width: 580px) {
+      display: block;
+    }
+  }
 
   &--logo {
     margin: 20px auto 0 auto;
@@ -26,4 +44,10 @@
       width: 100px;
     }
   }
+  @media screen and (max-width: 580px) {
+    transform: translateX(-200px);
+  }
+}
+.responsiveBar {
+  transform: translateX(0);
 }

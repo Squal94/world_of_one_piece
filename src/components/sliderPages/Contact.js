@@ -10,13 +10,13 @@ const Contact = () => {
     () => (event) => {
       event.preventDefault();
 
-      const data = {
-        name: nameInputElement.current?.value,
-        email: emailInputElement.current?.value,
-        textArea: textAreaInputElement.current?.value,
-      };
-      // Possibilité de se connecter à EmailJs ou de faire un dispatch dans le store
-      console.log(data);
+      // const data = {
+      //   name: nameInputElement.current?.value,
+      //   email: emailInputElement.current?.value,
+      //   textArea: textAreaInputElement.current?.value,
+      // };
+      // // Possibilité de se connecter à EmailJs ou de faire un dispatch dans le store
+      // console.log(data);
 
       formRef.current.reset();
     },

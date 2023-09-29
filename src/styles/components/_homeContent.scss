@@ -1,11 +1,20 @@
 .homeContainer {
   font-family: "Sady", Georgia, "Times New Roman", Times, serif;
+  @media screen and (max-width: 580px) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
   &__title {
     animation: open-animation 1.2s ease-in-out;
     font-size: 3rem;
     margin: 20px 20px;
     width: 300px;
     height: 200px;
+    @media screen and (max-width: 580px) {
+      width: 200px;
+    }
     img {
       object-fit: contain;
       width: 100%;
@@ -16,10 +25,22 @@
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: flex-start;
+    @media screen and (max-width: 580px) {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      iframe {
+        width: 200px;
+      }
+    }
     img {
       background-color: aliceblue;
       width: 400px;
       border: 2px solid rgb(229, 224, 124);
+      @media screen and (max-width: 580px) {
+        width: 200px;
+      }
     }
   }
   &__pitch {
