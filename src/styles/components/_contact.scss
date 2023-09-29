@@ -5,9 +5,9 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin-left: 100px;
   max-width: 90%;
   height: 100vh;
+  margin: 0 auto;
 
   &__form {
     display: flex;
@@ -17,9 +17,17 @@
     &--right {
       max-width: 300px;
       margin: 50px;
+      width: 100%;
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
     }
     &--left {
       max-width: 450px;
+      width: 100%;
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
     }
     &--center {
       background-color: rgba(255, 255, 255, 0.686);
