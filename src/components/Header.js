@@ -1,20 +1,27 @@
 import React, { useEffect, useState } from "react";
 import BtnMenu from "./BtnMenu";
-import { useDispatch } from "react-redux";
-import { contentSelected } from "../features/general.slice";
+import { useDispatch, useSelector } from "react-redux";
+import { contentSelected, navToogle } from "../features/general.slice";
 
 const Header = () => {
   const dispatch = useDispatch();
-  const [toogleBar, setToogleBar] = useState(true);
+  // const [toogleBar, setToogleBar] = useState(true);
+  const toogleBar = useSelector((state) => state.general.toolbar);
   const navBar = document.querySelector(".headerContainer");
-  useEffect(() => {
-    if (!toogleBar) {
-      navBar?.classList.add("responsiveBar");
-    } else {
-      navBar?.classList.remove("responsiveBar");
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [toogleBar]);
+  // useEffect(() => {
+  //   if (!toogleBar) {
+  //     navBar?.classList.add("responsiveBar");
+  //   } else {
+  //     navBar?.classList.remove("responsiveBar");
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [toogleBar]);
+  // console.log(toogleBar);
+
+  const handleClick = () => {
+    navBar?.classList.toggle("responsiveBar");
+    dispatch(navToogle(!toogleBar));
+  };
 
   const menuTitles = [
     "Home",
@@ -24,12 +31,14 @@ const Header = () => {
     "Events",
     "Contact",
   ];
+  // dispatch(navToogle(!toogleBar))
 
   return (
     <div className="headerContainer">
       <p
         className="headerContainer__responsive"
-        onClick={() => setToogleBar(!toogleBar)}
+        onClick={() => handleClick()}
+        // onClick={() => setToogleBar(!toogleBar)}
       >
         Menu
       </p>

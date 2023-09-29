@@ -85,8 +85,6 @@ const Events = () => {
                   <img src="/assets/pngegg(5).png" alt="Netflix logo" />
                 </div>
               </div>
-              {/* <h3>Saison 1 terminée saison 2 en production</h3>
-                  <p>Serie adaptée de l'anime one piece Eiichirō Oda</p> */}
               <h5>
                 <NavLink
                   to={"https://www.netflix.com/fr/title/80217863"}

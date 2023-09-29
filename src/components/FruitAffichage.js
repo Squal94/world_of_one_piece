@@ -38,34 +38,3 @@ const FruitAffichage = ({ value }) => {
 };
 
 export default FruitAffichage;
-
-// const [fruitSelected, setFruitSelected] = useState("");
-// const testImg = document.querySelector(".fruitSelected__container--img");
-// const dispatch = useDispatch();
-// const fruits = useSelector((state) => state.data.fruitsData);
-// const sizePic = useSelector((state) => state.general.imgSize);
-
-// `/assets/fruits/${value}.png `
-// ? `/assets/fruits/${value}.png`
-// : `/assets/fruits/No_image.png`
-
-// {value && (
-//   <img
-//     src={
-//       require(`./../assets/img/fruits/${value}.png`)
-//         ? `./../assets/img/fruits/${value}.png`
-//         : `./../assets/img/fruits/No_image.png.png`
-//     }
-//     alt={value}
-//   />
-// )}
-
-// const img = () => {
-//   let test = new Image();
-//   const test2 = test.src`/assets/fruits/${value}.png`;
-//   if (test2) {
-//     console.log("ok");
-//   } else {
-//     console.log("not found");
-//   }
-// };
