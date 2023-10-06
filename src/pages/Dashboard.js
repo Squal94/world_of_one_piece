@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import bgWano from "../assets/img/BgWano.png";
 import { useSelector } from "react-redux";
@@ -7,7 +7,6 @@ import { innerContent } from "../utils/functions";
 const Dashboard = () => {
   const contentSelected = useSelector((state) => state.general.content);
   let content = useRef(innerContent(contentSelected));
-  let contentTest;
 
   return (
     <div className="dashboardContainer">
