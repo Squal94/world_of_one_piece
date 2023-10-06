@@ -32,7 +32,7 @@ const EquipageCard = ({ id, index }) => {
           <h1 className="equipageCardContainer--title">{id}</h1>
           <img
             className="equipageCardContainer--img"
-            src={`/assets/iconEquipage/${id.toLowerCase()}Pc.png`}
+            src={`assets/iconEquipage/${id.toLowerCase()}Pc.png`}
             alt={id}
           />
         </div>

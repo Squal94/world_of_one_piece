@@ -82,7 +82,7 @@ const Events = () => {
               <div className="date">
                 <div className="title">
                   <h4>One piece sur</h4>
-                  <img src="/assets/pngegg(5).png" alt="Netflix logo" />
+                  <img src="assets/pngegg(5).png" alt="Netflix logo" />
                 </div>
               </div>
               <h5>

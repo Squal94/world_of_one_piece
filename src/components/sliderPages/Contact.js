@@ -28,7 +28,7 @@ const Contact = () => {
       <div className="contact__form">
         <img
           className="contact__form--left"
-          src="/assets/contactLeft.png"
+          src="assets/contactLeft.png"
           alt="Nami"
         />
         <form
@@ -38,17 +38,17 @@ const Contact = () => {
         >
           <img
             className="contact__form--center--img1"
-            src="/assets/goodies1.png"
+            src="assets/goodies1.png"
             alt="luffy face 1"
           />
           <img
             className="contact__form--center--img2"
-            src="/assets/goodies2.png"
+            src="assets/goodies2.png"
             alt="luffy face 2"
           />
           <img
             className="contact__form--center--img3"
-            src="/assets/goodies3.png"
+            src="assets/goodies3.png"
             alt="luffy face 3"
           />
 
@@ -94,7 +94,7 @@ const Contact = () => {
         </form>
         <img
           className="contact__form--right"
-          src="/assets/contactRight.png"
+          src="assets/contactRight.png"
           alt="Robin"
         />
       </div>

@@ -5,7 +5,7 @@ const HomeContent = () => {
   return (
     <div className="homeContainer">
       <h1 className="homeContainer__title">
-        World of <img src="/assets/TitreLogo.png" alt="One piece titre" />
+        World of <img src="assets/TitreLogo.png" alt="One piece titre" />
       </h1>
       <div className="homeContainer__news">
         <article>
@@ -26,7 +26,7 @@ const HomeContent = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/assets/crunchyroll.png" alt="crunchyroll logo" />
+            <img src="assets/crunchyroll.png" alt="crunchyroll logo" />
           </NavLink>
         </article>
       </div>

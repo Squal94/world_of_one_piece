@@ -18,13 +18,13 @@ const Modal = ({ data }) => {
       <div className="modal__container">
         <img
           className="modal__container--bg"
-          src={`/assets/bgModal/bg_${bgSelected.toLowerCase()}.jpg`}
+          src={`assets/bgModal/bg_${bgSelected.toLowerCase()}.jpg`}
           alt=""
         />
 
         <div className="modal__container__content">
           <div className="modal__container__content--bounty">
-            <img src={`/assets/bounty/bounty${bgSelected}.jpg`} alt="bounty" />
+            <img src={`assets/bounty/bounty${bgSelected}.jpg`} alt="bounty" />
             <p>{data.bounty} berrys</p>
           </div>
           <div className="modal__container__content--info">

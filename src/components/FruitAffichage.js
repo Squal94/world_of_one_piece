@@ -25,7 +25,7 @@ const FruitAffichage = ({ value }) => {
 
       <img
         className="fruitSelected--img"
-        src={`/assets/fruits/${value}.png`}
+        src={`assets/fruits/${value}.png`}
         alt={value}
       />
 

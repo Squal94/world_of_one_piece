@@ -29,7 +29,7 @@ const Header = () => {
       </p>
       <div className="headerContainer--logo">
         <img
-          src="/assets/i0l2badcfgquntgjngvfh6al7h-605f5464df6a70f5b6479cda9b1c12ec.png"
+          src="assets/i0l2badcfgquntgjngvfh6al7h-605f5464df6a70f5b6479cda9b1c12ec.png"
           alt="Logo onepiece"
         />
       </div>
@@ -50,7 +50,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="headerContainer--goodies">
-        <img src="/assets/goodies.png" alt="Luffy assis" />
+        <img src="assets/goodies.png" alt="Luffy assis" />
       </div>
     </div>
   );

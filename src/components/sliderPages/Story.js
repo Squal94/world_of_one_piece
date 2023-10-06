@@ -7,13 +7,13 @@ const Story = () => {
     <div className="storyContainer">
       <img
         className="storyContainer--title"
-        src="/assets/TitreLogo.png"
+        src="assets/TitreLogo.png"
         alt="One piece logo"
       />
       <h1>Story</h1>
       <div className="storyContainer__content">
         <article className="storyContainer__content--article">
-          <img src="/assets/avt_eiichiro-oda_5427.jpg" alt="Eiichirō Oda" />
+          <img src="assets/avt_eiichiro-oda_5427.jpg" alt="Eiichirō Oda" />
           <div className="storyContainer__content--article--text">
             <h2>
               <NavLink to={"https://fr.wikipedia.org/wiki/Eiichir%C5%8D_Oda"}>
@@ -70,7 +70,7 @@ const Story = () => {
               afin de devenir le prochain roi des pirates.
             </p>
           </div>
-          <img src="/assets/onePiece.jpg" alt="Eiichirō Oda" />
+          <img src="assets/onePiece.jpg" alt="Eiichirō Oda" />
         </article>
       </div>
       <div className="storyContainer__best">
