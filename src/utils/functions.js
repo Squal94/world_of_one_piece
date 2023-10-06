@@ -23,7 +23,7 @@ export const innerContent = (contentSelected) => {
     case "contact":
       return <Contact />;
     default:
-      return "";
+      return <HomeContent />;
   }
 };
 
