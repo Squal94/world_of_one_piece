@@ -20,7 +20,6 @@ export const generalSlice = createSlice({
     },
     contentSelected: (state, { payload }) => {
       state.content = payload.toLowerCase();
-      console.log(state.content);
     },
     imgSize: (state, { payload }) => {
       state.imgSize = payload;
