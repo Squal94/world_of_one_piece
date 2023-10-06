@@ -11,7 +11,7 @@ const Dashboard = () => {
     <div className="dashboardContainer">
       <Header />
       <div className="dashboardContainer__Content">
-        {innerContent(contentSelected)}
+        {contentSelected && innerContent(contentSelected)}
       </div>
       <div className="dashboardContainer--bgHome">
         <img src={bgWano} alt="Pays de Wano kuni" />
