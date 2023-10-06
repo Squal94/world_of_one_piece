@@ -33,7 +33,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         {/* <Route path="/" element={<Dashboard />} /> */}
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/world_of_one_piece/" element={<Dashboard />} />
         <Route path="/*" element={<Erreur />} />
       </Routes>
     </BrowserRouter>
