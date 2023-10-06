@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/world_of_one_piece/static/css/main.ee6f0a9e.css",
-    "main.js": "/world_of_one_piece/static/js/main.52526963.js",
+    "main.js": "/world_of_one_piece/static/js/main.3d4f2aa7.js",
     "static/media/Nuit-OP105.png": "/world_of_one_piece/static/media/Nuit-OP105.249953810fe911227282.png",
     "static/media/BgWano.png": "/world_of_one_piece/static/media/BgWano.506b974e2f41096141f2.png",
     "static/media/one-piece-equipage-netflix-chapeau-de-paille-saison-2-scaled.jpg": "/world_of_one_piece/static/media/one-piece-equipage-netflix-chapeau-de-paille-saison-2-scaled.5101a1c26962e1daf6cc.jpg",
@@ -11,10 +11,10 @@
     "static/media/BAR_SADY-Regular.otf": "/world_of_one_piece/static/media/BAR_SADY-Regular.68ccb329d40bb1a90420.otf",
     "index.html": "/world_of_one_piece/index.html",
     "main.ee6f0a9e.css.map": "/world_of_one_piece/static/css/main.ee6f0a9e.css.map",
-    "main.52526963.js.map": "/world_of_one_piece/static/js/main.52526963.js.map"
+    "main.3d4f2aa7.js.map": "/world_of_one_piece/static/js/main.3d4f2aa7.js.map"
   },
   "entrypoints": [
     "static/css/main.ee6f0a9e.css",
-    "static/js/main.52526963.js"
+    "static/js/main.3d4f2aa7.js"
   ]
 }
