@@ -6,6 +6,8 @@ export const generalSlice = createSlice({
     scrollPosition: "",
     content: "",
     imgSize: "",
+    // pageSelector: "",
+    //test this way pageSelector
     toolbar: false,
   },
   reducers: {
@@ -27,6 +29,9 @@ export const generalSlice = createSlice({
     navToogle: (state, { payload }) => {
       state.toolbar = payload;
     },
+    // pageIndex:(state,{payload})=>{
+
+    // }
   },
 });
 

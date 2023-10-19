@@ -7,6 +7,8 @@ import Events from "../components/sliderPages/Events";
 import Contact from "../components/sliderPages/Contact";
 
 export const innerContent = (contentSelected) => {
+  //test 1
+  // contentSelected.preventDefault();
   switch (contentSelected) {
     case "home":
       return <HomeContent />;
@@ -23,7 +25,8 @@ export const innerContent = (contentSelected) => {
     case "contact":
       return <Contact />;
     default:
-      return <HomeContent />;
+      return <Contact />;
+    //test 2 voir si probleme
   }
 };
 

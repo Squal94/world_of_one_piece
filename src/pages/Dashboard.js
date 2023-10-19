@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../components/Header";
 import bgWano from "../assets/img/BgWano.png";
 import { useSelector } from "react-redux";
 import { innerContent } from "../utils/functions";
-import Fruits from "../components/sliderPages/Fruits";
 
 const Dashboard = () => {
   const contentSelected = useSelector((state) => state.general.content);
