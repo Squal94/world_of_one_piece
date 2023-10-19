@@ -8,47 +8,26 @@ import Contact from "../components/sliderPages/Contact";
 
 export const innerContent = (contentSelected) => {
   //test 1
-
-  if (contentSelected === "home") {
-    return <HomeContent />;
+  // contentSelected.preventDefault();
+  switch (contentSelected) {
+    case "home":
+      return <HomeContent />;
+    case "story":
+      return <Story />;
+    case "equipage":
+      return <Equipage />;
+    case "iles":
+      return <Iles />;
+    case "fruits":
+      return <Fruits />;
+    case "events":
+      return <Events />;
+    case "contact":
+      return <Contact />;
+    default:
+      return <HomeContent />;
+    //test 2 voir si probleme
   }
-  if (contentSelected === "story") {
-    return <Story />;
-  }
-  if (contentSelected === "equipage") {
-    return <Equipage />;
-  }
-  if (contentSelected === "iles") {
-    return <Iles />;
-  }
-  if (contentSelected === "fruits") {
-    return <Fruits />;
-  }
-  if (contentSelected === "events") {
-    return <Events />;
-  }
-  if (contentSelected === "contact") {
-    return <Contact />;
-  }
-  // switch (contentSelected) {
-  //   case "home":
-  //     return <HomeContent />;
-  //   case "story":
-  //     return <Story />;
-  //   case "equipage":
-  //     return <Equipage />;
-  //   case "iles":
-  //     return <Iles />;
-  //   case "fruits":
-  //     return <Fruits />;
-  //   case "events":
-  //     return <Events />;
-  //   case "contact":
-  //     return <Contact />;
-  //   default:
-  //     return <HomeContent />;
-  //   //test 2 voir si probleme
-  // }
 };
 
 // import axios from "axios";

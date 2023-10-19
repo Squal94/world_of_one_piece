@@ -10,7 +10,7 @@ const BtnMenu = ({ value }) => {
 
   const scrollZero = () => {
     window.scrollTo({ top: 0 });
-    navBar.classList.remove("responsiveBar");
+    navBar?.classList.remove("responsiveBar");
     dispatch(navToogle(!toogleBar));
   };
 
