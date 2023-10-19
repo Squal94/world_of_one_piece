@@ -25,7 +25,7 @@ export const innerContent = (contentSelected) => {
     case "contact":
       return <Contact />;
     default:
-      return <Contact />;
+      return <HomeContent />;
     //test 2 voir si probleme
   }
 };
