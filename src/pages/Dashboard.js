@@ -11,7 +11,7 @@ const Dashboard = () => {
   return (
     <div className="dashboardContainer">
       <Header />
-      <div className="dashboardContainer__Content">{test && test}</div>
+      <div className="dashboardContainer__Content">{test}</div>
       <div className="dashboardContainer--bgHome">
         <img src={bgWano} alt="Pays de Wano kuni" />
       </div>

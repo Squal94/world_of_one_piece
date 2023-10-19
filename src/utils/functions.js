@@ -8,7 +8,7 @@ import Contact from "../components/sliderPages/Contact";
 
 export const innerContent = (contentSelected) => {
   //test 1
-  // contentSelected.preventDefault();
+  contentSelected.preventDefault();
   switch (contentSelected) {
     case "home":
       return <HomeContent />;
