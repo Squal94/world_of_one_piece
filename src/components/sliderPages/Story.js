@@ -79,43 +79,43 @@ const Story = () => {
         <div className="storyContainer__best--youtube">
           <YoutubeEmbed
             link={"mjSCqjrf0gE"}
-            pic="/assets/youtubeCapture/Capture1.png"
+            pic="assets/youtubeCapture/Capture1.png"
           />
           <YoutubeEmbed
             link={"XuWuin5UEBk"}
-            pic="/assets/youtubeCapture/Capture2.png"
+            pic="assets/youtubeCapture/Capture2.png"
           />
           <YoutubeEmbed
             link={"XM79rJcYye4"}
-            pic="/assets/youtubeCapture/Capture3.png"
+            pic="assets/youtubeCapture/Capture3.png"
           />
           <YoutubeEmbed
             link={"G2zkKqPo1lw"}
-            pic="/assets/youtubeCapture/Capture4.png"
+            pic="assets/youtubeCapture/Capture4.png"
           />
           <YoutubeEmbed
             link={"23eDwEgSu-k"}
-            pic="/assets/youtubeCapture/Capture5.png"
+            pic="assets/youtubeCapture/Capture5.png"
           />
           <YoutubeEmbed
             link={"M3Wy9umXDcE"}
-            pic="/assets/youtubeCapture/Capture6.png"
+            pic="assets/youtubeCapture/Capture6.png"
           />
           <YoutubeEmbed
             link={"6qt1tyasOmM"}
-            pic="/assets/youtubeCapture/Capture7.png"
+            pic="assets/youtubeCapture/Capture7.png"
           />
           <YoutubeEmbed
             link={"zvHZukrBDE4"}
-            pic="/assets/youtubeCapture/Capture8.png"
+            pic="assets/youtubeCapture/Capture8.png"
           />
           <YoutubeEmbed
             link={"xt1LkHeIu08"}
-            pic="/assets/youtubeCapture/Capture9.png"
+            pic="assets/youtubeCapture/Capture9.png"
           />
           <YoutubeEmbed
             link={"EQCR7UuO7lo"}
-            pic="/assets/youtubeCapture/Capture10.png"
+            pic="assets/youtubeCapture/Capture10.png"
           />
         </div>
       </div>
