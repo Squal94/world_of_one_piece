@@ -7,8 +7,6 @@ import Events from "../components/sliderPages/Events";
 import Contact from "../components/sliderPages/Contact";
 
 export const innerContent = (contentSelected) => {
-  //test 1
-  // contentSelected.preventDefault();
   switch (contentSelected) {
     case "home":
       return <HomeContent />;
@@ -26,29 +24,5 @@ export const innerContent = (contentSelected) => {
       return <Contact />;
     default:
       return <HomeContent />;
-    //test 2 voir si probleme
   }
 };
-
-// import axios from "axios";
-
-// export const dataSelector = (dataChoice) => {
-//   const data = axios
-//     .get(`https://api.api-onepiece.com/${dataChoice}`)
-//     .then((res) => res.data);
-
-//   return data;
-// };
-///////////////////////////////////////////////////////////////////////////////////////
-// export default function Card({ index }) {
-//     const [afterDelay, setAfterDelay] = useState(false);
-//     const DELAY_TIME = 250 // en millisecondes
-
-//     setTimeout(() => setAfterDelay(true), index * DELAY_TIME);
-
-//     return (
-//        <>
-//            {afterDelay && }
-//        </>
-//     );
-// }

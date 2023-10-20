@@ -2,10 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const YoutubeEmbed = ({ pic, link }) => {
-  // const [embed, setEmbed] = useState("embedId");
-  // useEffect(() => {
-  //   setEmbed("embedId");
-  // }, []);
   return (
     <div className="video-responsive">
       <NavLink
@@ -18,9 +14,5 @@ const YoutubeEmbed = ({ pic, link }) => {
     </div>
   );
 };
-
-// YoutubeEmbed.propTypes = {
-//   embedId: PropTypes.string.isRequired,
-// };
 
 export default YoutubeEmbed;

@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# World Of One Piece
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. General information
 
-## Available Scripts
+The World of Onepiece site is a showcase site that is designed as a dashboard it has
 
-In the project directory, you can run:
+a unique page with a change of content to click .
 
-### `npm start`
+it has as backend an external database [API One Piece ](https://api-onepiece.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2.Install packages and library for this application
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For different libraries you must :
 
-### `npm test`
+    1. install project with npm  :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    `npm install `
 
-### `npm run build`
+    2. libary use for the project :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      -  create react app
+      -  react router dom
+      -  sass
+      -  axios
+      -  react-redux
+      -  @reduxjs/toolkit
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      This is all the package and library use for the proper operation of this project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 3.Start the project
 
-### `npm run eject`
+start the application with the code :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+(do not forget in the console to place you in the front folder with command
+`cd world_of_one_piece` before launching `npm start`)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+And happy navigation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 4.Précision
 
-## Learn More
+You can also visit the website:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Site](https://squal94.github.io/world_of_one_piece/)

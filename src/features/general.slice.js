@@ -6,8 +6,6 @@ export const generalSlice = createSlice({
     scrollPosition: "",
     content: "",
     imgSize: "",
-    pageSelector: "",
-    //test this way pageSelector
     toolbar: false,
   },
   reducers: {
